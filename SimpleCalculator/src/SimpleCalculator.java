@@ -14,6 +14,7 @@ public class SimpleCalculator {
 		System.out.println("2.Substraction");
 		System.out.println("3.Multiplication");
 		System.out.println("4.Division");
+		System.out.println("5.Integer Modulus Division");
 
 	}
 
@@ -22,7 +23,7 @@ public class SimpleCalculator {
 		double a, b;
 		System.out.println("Enter first value");
 		a = scan.nextDouble();
-		System.out.println("Enter first value");
+		System.out.println("Enter second value");
 		b = scan.nextDouble();
 		double val = a / b;
 
@@ -34,7 +35,7 @@ public class SimpleCalculator {
 		double a, b;
 		System.out.println("Enter first value");
 		a = scan.nextDouble();
-		System.out.println("Enter first value");
+		System.out.println("Enter second value");
 		b = scan.nextDouble();
 		double val = a * b;
 
@@ -46,7 +47,7 @@ public class SimpleCalculator {
 		double a, b;
 		System.out.println("Enter first value");
 		a = scan.nextDouble();
-		System.out.println("Enter first value");
+		System.out.println("Enter second value");
 		b = scan.nextDouble();
 		double val = a - b;
 
@@ -58,7 +59,7 @@ public class SimpleCalculator {
 		double a, b;
 		System.out.println("Enter first value");
 		a = scan.nextDouble();
-		System.out.println("Enter first value");
+		System.out.println("Enter second value");
 		b = scan.nextDouble();
 		double val = a + b;
 
@@ -101,6 +102,10 @@ public class SimpleCalculator {
 			break;
 		case 4:
 			score = calc.division();
+			System.out.println(score);
+			break;
+		case 5:
+			score = calc.modulusIntegerDivision();
 			System.out.println(score);
 			break;
 		default:
