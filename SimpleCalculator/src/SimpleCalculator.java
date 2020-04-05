@@ -65,6 +65,18 @@ public class SimpleCalculator {
 		return val;
 	}
 
+	public int modulusIntegerDivision(){
+		scan.useLocale(Locale.US);
+		int a, b;
+		System.out.println("Enter first integer");
+		a = scan.nextInt();
+		System.out.println("Enter second integer");
+		b = scan.nextInt();
+		int val = a % b;
+
+		return val;
+	}
+
 	public static void main(String[] args) {
 		SimpleCalculator calc = new SimpleCalculator();
 		Scanner scan = new Scanner(System.in);
